@@ -5,7 +5,7 @@
 # Variables
 DOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 HOME_DIR="${HOME:-~}"
-DOTFILES=("bashrc" "exports" "aliases" "bash_profile")
+DOTFILES=("bashrc" "exports" "aliases" "bash_profile" "vimrc")
 
 # Backup old dotfiles
 [ -d "$HOME_DIR/.old_dotfiles" ] || mkdir -p "$HOME_DIR/.old_dotfiles"
