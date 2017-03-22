@@ -48,3 +48,9 @@ export LS_COLORS="ex=43:*.o=43:DIR=32"
 
 # MacPorts
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
+# Anaconda
+export PATH="/Users/rsm5139/anaconda2/bin:$PATH"
+
+# Postgres
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
