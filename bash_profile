@@ -49,3 +49,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Set default file permissions
 umask 002
+
+# Add Docker whale message
+docker version > /dev/null 2>&1 && docker run randymiller/docker-whale

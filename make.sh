@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Builds dotfiles in home directory
  
@@ -11,7 +11,9 @@ DOTFILES=("bashrc" "exports" "aliases" "bash_profile" "vimrc")
 [ -d "$HOME_DIR/.old_dotfiles" ] || mkdir -p "$HOME_DIR/.old_dotfiles"
 DATE=$(date +%Y-%m-%d_%H-%M-%S)
 [ -d "$HOME_DIR/.old_dotfiles/$DATE" ] || mkdir -p "$HOME_DIR/.old_dotfiles/$DATE"
-#cp "$HOME_DIR/."* "$HOME_DIR/.old_dotfiles/$DATE/."
+for file in ${DOTFILES[@]}; do
+  cp "$HOME_DIR/.$file" "$HOME_DIR/.old_dotfiles/$DATE/."
+done
 
 # Create symlinks to new dotfiles
 for file in ${DOTFILES[@]}; do
