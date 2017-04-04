@@ -64,4 +64,6 @@ export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 # Python customization
 #export PIP_REQUIRE_VIRTUALENV=true
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-export PYTHONDONTWRITEBYTECODE=1# I am another test line
+export PYTHONDONTWRITEBYTECODE=1
+
+# I am a test line
