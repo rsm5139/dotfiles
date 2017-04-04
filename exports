@@ -62,6 +62,6 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 
 # Python customization
-export PIP_REQUIRE_VIRTUALENV=true
+#export PIP_REQUIRE_VIRTUALENV=true
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 export PYTHONDONTWRITEBYTECODE=1
