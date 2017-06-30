@@ -52,18 +52,18 @@ export LS_COLORS="ex=43:*.o=43:DIR=32"
 # MacPorts
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
-# Anaconda
-export PATH="/Users/rsm5139/anaconda2/bin:$PATH"
+# Anaconda2
+#export PATH="/Users/$(whoami)/anaconda2/bin:$PATH"
+# Anaconda3
+export PATH="/Users/$(whoami)/anaconda3/bin:$PATH"
 
 # Postgres
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # Python 3
-export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+#export PATH="${PATH}:/Library/Frameworks/Python.framework/Versions/3.6/bin"
 
 # Python customization
 #export PIP_REQUIRE_VIRTUALENV=true
-export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-export PYTHONDONTWRITEBYTECODE=1
-
-# I am a test line
+#export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+#export PYTHONDONTWRITEBYTECODE=1
