@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Builds dotfiles in home directory
- 
+
 # Variables
 DOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 HOME_DIR="${HOME:-~}"
@@ -20,4 +20,4 @@ for file in ${DOTFILES[@]}; do
   ln -s "$DOT_DIR/$file" "$HOME_DIR/.$file"
 done
 
-source "$HOME/.bashrc"
+exec bash -l
