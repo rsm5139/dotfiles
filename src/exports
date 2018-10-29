@@ -30,9 +30,9 @@ export LESS_TERMCAP_md="${yellow}";
 export MANPAGER='less -X';
 
 # Set defaults for Ruby Gems
-export GEM_HOME="$HOME/.gems"
-export GEM_PATH="$HOME/.gems"
-export PATH="$HOME/.gems/bin:$PATH"
+export GEM_HOME="$HOME/.local/gems"
+export GEM_PATH="$HOME/.local/gems"
+export PATH="$HOME/.local/gems/bin:$PATH"
 
 # Add other possible local bins to PATH
 export PATH=$HOME/.local/bin:$HOME/local/bin:$HOME/bin:$PATH
@@ -52,10 +52,10 @@ export LS_COLORS="ex=43:*.o=43:DIR=32"
 # MacPorts
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
-# Anaconda2
-#export PATH="/Users/$(whoami)/anaconda2/bin:$PATH"
-# Anaconda3
-export PATH="/Users/$(whoami)/anaconda3/bin:$PATH"
+# Miniconda2
+export PATH="$HOME/.local/miniconda2/bin:$PATH"
+# Miniconda3
+export PATH="$HOME/.local/miniconda3/bin:$PATH"
 
 # Postgres
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
