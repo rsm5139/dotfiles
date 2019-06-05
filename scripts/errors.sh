@@ -19,6 +19,11 @@ handle_error() {
       echo "Please run \033[1mmake install\033[0m before attempting anything else."
       echo "Error message 2"
       ;;
+    3)
+      echo "Package not installed."
+      echo "Cannot uninstall package unless previously installed."
+      echo "Error message 3"
+      ;;
     *)
       echo "$2"
       echo "Error message $1"

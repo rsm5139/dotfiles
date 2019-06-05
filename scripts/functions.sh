@@ -11,11 +11,10 @@ store_file() {
   # $2 - name of file to be backed-up
   local filename=${2##*/}
   for f in $(ls "$1" | grep "$filename"); do
-    diff "$1/$f" "$2" && { echo "$1/$f"; return; }
+    diff "$1/$f" "$2" >/dev/null && { echo "$1/$f"; return; }
   done
   local tmp=$(mktemp "$1/$filename.XXXXXX")
   rm "$tmp" && cp "$2" "$tmp"
   echo "$tmp"
   return
 }
-

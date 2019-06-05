@@ -60,6 +60,9 @@ export PATH="$HOME/.local/miniconda3/bin:$PATH"
 # Postgres
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
+# Homebrew
+export PATH="$HOME/.local/homebrew/bin:$PATH"
+
 # Python 3
 #export PATH="${PATH}:/Library/Frameworks/Python.framework/Versions/3.6/bin"
 
